@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wagiha Mariam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div id="stars" class="stars"></div>
+    <canvas id="neuralCanvas"></canvas>
+    <div class="animated-logo">
+        <div class="logo-center"></div>
+        <div class="logo-orbit orbit-1"></div>
+        <div class="logo-orbit orbit-2"></div>
+    </div>
+
+    <div id="glow-cursor"></div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li>
+                <button class="toggle-button" id="toggleMode" aria-label="Toggle Light/Dark Mode">
+                    <i class="fas fa-adjust"></i>
+                </button>
+            </li>
+        </ul>
+        <div class="nav-icons">
+            <a href="https://github.com/wagiham" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/wagiha-m-0947181b4" target="_blank" aria-label="LinkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+    </nav>
+
+    <section id="home" class="landing">
+        <h1>hi there, i'm <span class="highlight">wagiha</span></h1>
+        <p id="typing" class="typing"></p>
+        <a href="mailto:wagiham@sas.upenn.edu" class="cta-button">Get in Touch!</a>
+    </section>
+
+    <!-- About, Projects, and Experience sections should go here -->
+    <section id="about"
+        style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px; max-width: 1000px; margin: 0 auto;">
+        <div style="flex: 1 1 55%; max-width: 600px;">
+            <h2 class="about-fade delay-1" style="color: var(--text-color); font-size: 2rem; margin-bottom: 20px;">
+                about me
+            </h2>
+
+
+            <p class="about-fade delay-2" style="line-height: 1.6; font-size: 1rem;">
+                My name is <strong">Wagiha</strong> (wa-jee-ha). I'm currently an undergraduate student at
+                    the University of
+                    Pennsylvania studying Cognitive Science and CIS.
+                    I'm passionate about <strong class="green-text">AI/ML applications</strong>, <strong
+                        class="green-text">UX
+                        design</strong>, and <strong class="green-text">data
+                        science</strong>.
+                    I aim to combine technical expertise with a creative mindset to solve complex problems.
+                    My work spans diverse fields, including machine learning research, software development, and user
+                    experience
+                    design.
+
+
+            </p>
+
+
+            <h3 class="about-fade delay-3" style="margin-top: 30px; font-size: 1.1rem;">
+                here are some of the languages my tech stack include:
+            </h3>
+
+
+            <ul
+                style="columns: 2; padding-left: 20px; margin-top: 10px; list-style: none; line-height: 1.8; font-size: 0.95rem;">
+                <li class="about-fade delay-4 gradient-text">➤ Python (incl. ML frameworks)</li>
+                <li class="about-fade delay-5 gradient-text">➤ Java</li>
+                <li class="about-fade delay-6 gradient-text">➤ C</li>
+                <li class="about-fade delay-7 gradient-text">➤ Assembly</li>
+                <li class="about-fade delay-8 gradient-text">➤ OCaml</li>
+                <li class="about-fade delay-9 gradient-text">➤ React.js</li>
+                <li class="about-fade delay-10 gradient-text">➤ HTML/CSS/JS</li>
+            </ul>
+
+
+            <p class="about-fade delay-2" style="line-height: 1.6; font-size: 1rem;">
+                I'm also interested in <strong class="green-text">equitable policy and social justice</strong> , and
+                serve on
+                the exec boards of ASAM UAB,
+                Undergraduate Women in AI, and WUDAC, to support inclusion and amplify underrepresented voices.
+            </p>
+        </div>
+
+
+        <div style="flex: 1 1 40%; text-align: center;">
+            <img src="images/typing.png" alt="Wagiha profile photo" class="about-fade delay-11"
+                style="max-width: 100%; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.3);">
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>ASL Detector</h3>
+                    <a href="https://github.com/wagiham/asl-detector" target="_blank" aria-label="GitHub Repository">
+                        <i class="fab fa-github" style="color: var(--text-color); font-size: 1.1rem;"></i>
+                    </a>
+                </div>
+                <p>Real-time ASL gesture recognition using OpenCV and deep learning.</p>
+            </div>
+            <a class="project-card" href="https://github.com/wagiham/reddit-risk-analyzer" target="_blank">
+                <h3>Reddit Risk Analyzer</h3>
+                <p>LLM-powered tool that models perceived risk in Reddit advice threads as part of independent study</p>
+            </a>
+            <div class="project-card">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>J Compiler</h3>
+                    <a href="https://github.com/wagiham/riscv-j-compiler" target="_blank"
+                        aria-label="GitHub Repository">
+                        <i class="fab fa-github" style="color: var(--text-color); font-size: 1.1rem;"></i>
+                    </a>
+                </div>
+                <p>J- compiler translating C code into optimized RISC-V assembly.</p>
+            </div>
+            <div class="project-card">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>Free Our Vote Website</h3>
+                    <a href="https://www.freeourvote.org" target="_blank" aria-label="Website Link">
+                        <i class="fas fa-external-link-alt" style="color: var(--text-color); font-size: 1.1rem;"></i>
+                    </a>
+                </div>
+                <p>Redesigned non-profit website using Figma and Framer. Created low-fi wireframes, mid-fi prototypes &
+                    a
+                    responsive, user-friendly UI.</p>
+            </div>
+            <div class="project-card">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>Stock Market Predictor</h3>
+                    <a href="https://github.com/wagiham/Stock_Market_Predictor.ipynb" target="_blank"
+                        aria-label="GitHub Repository">
+                        <i class="fab fa-github" style="color: var(--text-color); font-size: 1.1rem;"></i>
+                    </a>
+                </div>
+                <p>Built a predictive model for stock market trends using historical market data using Python libraries.
+                </p>
+            </div>
+            <div class="project-card">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>x86 OS Kernel</h3>
+                    <span style="font-size: 0.9rem; color: var(--highlight-color); font-weight: bold;">Coming
+                        Soon!</span>
+                </div>
+                <p>16-bit OS that boots from BIOS, prints to screen, and lays the foundation for input, memory, and file
+                    system
+                    support.</p>
+                <p style="font-size: 0.6rem;">*Note: I haven't taken an OS class, just doing this because it seems cool.
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline-wrapper">
+            <div class="timeline-line"></div>
+
+
+            <div class="timeline-event">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Undergraduate Research Assistant – Cognitive Modeling and NLP</h3>
+                    <p>(LLM-Based Risk Analysis)</p>
+                    <p><em>Jan 2025 – Now</em></p>
+                    <p class="tech-stack">Tools/Technologies: Python, OpenAI API, Pandas, Scikit-learn, NLP (spaCy),
+                        Regex, Git
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="timeline-event">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Machine Learning Research Assistant</h3>
+                    <p>PDRI Dev Lab</p>
+                    <p><em>Sep 2024 – Mar 2025</em></p>
+                    <p class="tech-stack">Tools/Technologies: Python, Satellite Imagery Analysis, Google Earth Engine,
+                        Scikit-learn, Data Cleaning,
+                        Jupyter, Git</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-event">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Software Designer</h3>
+                    <p>Free Our Vote</p>
+                    <p><em>May 2024 – Aug 2024</em></p>
+                    <p class="tech-stack">Tools/Technologies: Figma, Framer, HTML, CSS, JavaScript — User Research, A/B
+                        Testing,
+                        Wireframing,
+                        Prototyping, Competitor Analysis</p>
+                </div>
+            </div>
+
+
+            <div class="timeline-event">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>AI/ML Fellow</h3>
+                    <p>Break Through Tech</p>
+                    <p><em>June 2023 – Dec 2023</em></p>
+                    <p class="tech-stack">
+                        <strong>Tools & Technologies:</strong>
+                        Python, NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn, Linux CLI, Keras, Git/GitHub
+                      </p>
+                      <p class="tech-stack">
+                        <strong>Projects:</strong>
+                        K-Nearest Neighbors (KNN), Decision Trees, Logistic & Linear Regression, Random Forest, Gradient Boosting, Model Evaluation (AUC, Precision, Recall),
+                        NLP (TF-IDF, Word Embeddings), Neural Networks.
+                      </p>                      
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer
+        style="text-align: center; padding: 30px 0; font-size: 0.9rem; color: var(--text-color); background-color: transparent;">
+        © 2025 Wagiha Mariam. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
