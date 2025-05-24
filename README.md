@@ -7,7 +7,6 @@ Welcome to my personal coding portfolio! This site showcases selected projects, 
 
 ## 🛠️ Tech Stack
 - **Languages:** HTML, CSS, JavaScript
-- **Libraries/Tools:** Font Awesome, Google Fonts
 - **Features:** Responsive design, dark/light mode toggle, custom cursor animation, animated background, interactive project cards
 
 ## 📁 Sections
