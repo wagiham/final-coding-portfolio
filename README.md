@@ -9,12 +9,6 @@ Welcome to my personal coding portfolio! This site showcases selected projects, 
 - **Languages:** HTML, CSS, JavaScript
 - **Features:** Responsive design, dark/light mode toggle, custom cursor animation, animated background, interactive project cards
 
-## 📁 Sections
-- **Home:** Typing animation and intro
-- **About:** Bio, skills, and interests
-- **Projects:** Real-world and academic projects with GitHub links
-- **Experience:** Timeline of research and work roles
-
 ## 🚀 Setup Instructions
 To run locally:
 
